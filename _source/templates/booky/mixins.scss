@@ -1,0 +1,8 @@
+
+// Fonts available:
+// Lato, Oswald, Montserrat, Roboto, Hi+Melody, Source+Sans+Pro
+
+@mixin set-font($size: 1rem, $family: 'Roboto') {
+  font-size: $size;
+  font-family: $family;
+}

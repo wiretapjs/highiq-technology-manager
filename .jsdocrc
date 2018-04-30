@@ -1,0 +1,10 @@
+{
+    "source": {
+        "include": [ "_source" ],
+        "excludePattern": ""
+    },
+    "opts": {
+        "recurse": true,
+        "template": "node_modules/minami"
+    }
+}

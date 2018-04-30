@@ -1,0 +1,146 @@
+.category {
+  width: 94%;
+  position: relative;
+  float: left;
+  margin: 1rem 3%;
+
+  @include tablet {
+    width: 44%;
+  }
+
+  @include desktop {
+    width: 27.33%;
+  }
+
+  @include xxl {
+    width: 19%;
+  }
+}
+
+.categories--dashboards {
+  @include desktop {
+    .category {
+      width: 44%;
+    }
+  }
+
+  @include xxl {
+    .category {
+      width: 27.33%;
+    }
+  }
+}
+
+.category__bookmarks {
+  width: 100%;
+  list-style: none;
+  margin-top: 0.7rem;
+
+  &.category__bookmarks--hidden {
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+.category__bookmark-drag-wrapper {
+  min-height: 36px;
+}
+
+.category__header {
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+
+  &.category__header--edit-mode .category__icon {
+    opacity: 1;
+    transition: color 0.2s linear, opacity 0.2s linear;
+    width: auto;
+    overflow: inherit;
+  }
+
+  &:after {
+    top: 2.7rem;
+    content: " ";
+    height: 2px;
+    left: 6px;
+    position: absolute;
+    right: 6px;
+  }
+
+  &.category__header--color0:after {
+    background-color: $color--0;
+  }
+
+  &.category__header--color1:after {
+    background-color: $color--1;
+  }
+
+  &.category__header--color2:after {
+    background-color: $color--2;
+  }
+
+  &.category__header--color3:after {
+    background-color: $color--3;
+  }
+
+  &.category__header--color4:after {
+    background-color: $color--4;
+  }
+
+  &.category__header--color5:after {
+    background-color: $color--5;
+  }
+
+  &.category__header--color6:after {
+    background-color: $color--6;
+  }
+
+  &.category__header--color7:after {
+    background-color: $color--7;
+  }
+
+  &.category__header--color8:after {
+    background-color: $color--8;
+  }
+}
+
+.category__toggle-icon {
+  transition: transform 0.2s linear;
+
+  &.category__toggle-icon--rotate {
+    transform: rotate(-90deg);
+  }
+}
+
+.category__icon {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.category__edit-icon--hide {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.category__name {
+  cursor: default;
+  flex-grow: 1;
+  user-select: none;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  &:active {
+    color: $color__font--primary;
+  }
+}
+
+.category__button {
+  margin: 6px 6px 0 6px;
+  display: flex;
+}

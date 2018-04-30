@@ -1,0 +1,14 @@
+.categories {
+  margin-top: 6rem;
+}
+
+@include desktop {
+  .categories--dashboards {
+    margin-left: 300px;
+  }
+}
+
+.categories__button {
+  width: calc(94% - 12px);
+  margin: 0 calc(3% + 6px);
+}
